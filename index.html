@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=A&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/8ef97435b0.js' crossorigin='anonymous'></script>
+    <title>Arey</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a href="./bootstrap-part-10" class="navbar-brand ">
+                        <span class="fas fa-crown"></span> King's Chicken</a>
+                </div>
+            </div>
+            <div class="nav navbar-nav form-inline navbar-right text-center order" style="padding: 10px; margin: 0 10px;">
+                <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Order now</a></button>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./bootstrap-part-10">All</a></li>
+                    <li><a href="#">Fried Chicken</a></li>
+                    <li><a href="#">Grilled</a></li>
+                    <li><a href="#">Roasted</a></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="chicken-container">
+            <div class="chilis">
+
+                <div class="chili" id="chili1">
+                    <img src="./images/chili.png" alt="">
+                </div>
+            </div>
+            <div class="chicken">
+                <div class="description">
+                    <p class="try">TRY THE ALL NEW</p>
+                    <h1>
+                        <span class="red">FIERY HOT</span> <br> ROYAL <br> CHICKEN</h1>
+                    <div class="price-container">
+                        <div class="price-desc">
+                            price starts at
+                        </div>
+                        <p class="price">P179</p>
+                    </div>
+
+                </div>
+
+                <img src="./images/chicken.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 66.69"><defs><style>.cls-1{fill:#4600ae;}</style></defs><title>shredded</title><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M-1,302l74,8,29-4,43,4h26l34-4,27,4,108-8s-25.79,8.56-18,8c70-5,30-8,70-4s-23,6,40,4-8,4,63-4,71-4,71-4,2-7,56-1,54,4,54,4l56,6s54-3,32-6,61,6,61,6l35-6s-78-9-20-6,37,4,58,6,21,0,21,0,19,10,80,6,28-2,61-6,8-14,33-7,25,6,25,6h38s-97,8-29,8h68l120-8s-90,15-29,8l61-7h33s21,8,57,9-9,7,36,0,45-8,45-8h74s-83,10-19,11,64,0,64,0l56-10s-7,17,28,10,35-10,35-10l44,1s50-8,50-1,70-11,70-11V252H-1Z" transform="translate(1 -252)"/></g></svg>
+
+    <section id="products">
+        <div class="container-fluid">
+            <h1 class="text-center">KING'S MENU</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default new">
+                        <div class="panel-body tag new">
+                            <img src="images/chicken.png" alt="" class="img-thumbnail">
+
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> Fiery Hot Royal Chicken
+                                </p>
+                                <p class="price">P179</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food1.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> Chicken Inasal
+                                </p>
+                                <p class="price">P119</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food2.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> Buffalo Chicken Wings
+                                </p>
+                                <p class="price">P139</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row row1">
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food3.jpg" alt="" class="img-thumbnail" tra>
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> Roasted Chicken Drumsticks
+                                </p>
+                                <p class="price">P159</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food4.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title">Grilled Chicken Kebab
+                                </p>
+                                <p class="price">P125</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food5.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> 1 Whole Roasted Chicken
+                                </p>
+                                <p class="price">P388</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row row1">
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food6.jpg" alt="" class="img-thumbnail" tra>
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> Hainanese Chicken Rice
+                                </p>
+                                <p class="price">P88</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food7.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title">Taiwanese Style Crispy Chicken
+                                </p>
+                                <p class="price">P119</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="product panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/food8.jpg" alt="" class="img-thumbnail">
+                        </div>
+                        <div class="panel-footer-container">
+                            <div class="panel-footer">
+
+                                <p class="title"> King's Chicken Shawarma
+                                </p>
+                                <p class="price">P88</p>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 66.69"><defs><style>.cls-1{fill:#4600ae;}.svg-bottom{
+        transform: rotate(180deg);
+        margin-top: -3rem;
+    }
+    </style></defs><title>shredded</title><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M-1,302l74,8,29-4,43,4h26l34-4,27,4,108-8s-25.79,8.56-18,8c70-5,30-8,70-4s-23,6,40,4-8,4,63-4,71-4,71-4,2-7,56-1,54,4,54,4l56,6s54-3,32-6,61,6,61,6l35-6s-78-9-20-6,37,4,58,6,21,0,21,0,19,10,80,6,28-2,61-6,8-14,33-7,25,6,25,6h38s-97,8-29,8h68l120-8s-90,15-29,8l61-7h33s21,8,57,9-9,7,36,0,45-8,45-8h74s-83,10-19,11,64,0,64,0l56-10s-7,17,28,10,35-10,35-10l44,1s50-8,50-1,70-11,70-11V252H-1Z" transform="translate(1 -252)"/></g></svg>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="text-left">
+                <p>2021 &copy; <span class="fas fa-crown"></span><span class="brand"> King's Chicken</span>
+                </p>
+            </div>
+            <div class="text-right">
+                <p class="text-left">REACH US THROUGH</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <span class="phone-no">
+                        <i class="fas fa-phone-alt"></i>
+                        777-6666
+                    </span>
+                    <div class="chat-now dropdown">
+                        <i class="fas fa-comment-dots" onclick="openChat()" id="openmychat"></i>
+                        <p>Chat us now!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="chat panel panel-default" id="mychat">
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+            <div class="panel-body chat-body">
+                Hello
+            </div>
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
