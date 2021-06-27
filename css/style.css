@@ -40,6 +40,11 @@
     margin-top: -8px;
 }
 
+.active-link {
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+}
+
 .fa-crown {
     color: var(--yellow--);
 }
@@ -52,6 +57,7 @@
 
 #order-btn {
     border-radius: 30px;
+    margin: 0 1rem;
 }
 
 #home {
@@ -59,11 +65,103 @@
     background-color: var(--purple--);
 }
 
+.chicken-home {
+    margin: -2rem 0;
+    width: 100%;
+    /* padding: 2rem 0; */
+    height: 100px;
+    overflow: hidden;
+    background-color: var(--purple--);
+}
+
+.page-title {
+    color: var(--yellow--);
+    font-family: 'Luckiest Guy';
+    font-size: 55px;
+    animation: titleAnimate 1.2s linear infinite;
+    z-index: 3;
+}
+
+@keyframes titleAnimate {
+    0% {
+        transform: scale(1.1);
+    }
+    15% {
+        transform: scale(1.1);
+    }
+    30% {
+        transform: rotate(-2deg);
+    }
+    45% {
+        transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: scale(1deg);
+    }
+}
+
+.svg-top {
+    transform: rotate(180deg);
+}
+
+.svg-bottom {
+    margin-top: -3rem;
+}
+
+.product-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    margin: 1rem;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+}
+
+.product-info:hover {
+    background-color: #d1d1d1;
+}
+
+.modal-header {
+    border: none;
+    min-height: 0;
+    height: 100%;
+}
+
+.modal-header p {
+    font-family: 'Acme';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body .product-info:hover {
+    background: rgb(216, 216, 216);
+}
+
 #products {
     margin-top: -3rem;
     padding-bottom: 3rem;
     /* height: 100vh; */
     background-color: var(--lightyellow--);
+}
+
+#products .col-md-4 a {
+    color: black;
+    text-decoration: none;
+}
+
+.product {
+    position: relative;
 }
 
 .chilis {
@@ -99,23 +197,30 @@
     color: white;
     font-family: 'Lato';
     font-weight: bold;
-    right: 10px;
+    left: 10px;
     z-index: 2;
     position: absolute;
 }
 
 .tag.new::before {
-    content: "NEW";
+    content: "New!";
 }
 
 .chicken-container {
     padding-top: 50px;
 }
 
-.chicken img {
+.chicken .chickenimg {
     transition: all .4s;
     width: 50%;
     animation: zoom linear .8s infinite;
+}
+
+.coke img {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    width: 14%;
 }
 
 .chicken img:hover {
@@ -126,6 +231,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .chicken h1 {
@@ -133,6 +239,13 @@
     font-size: 7em;
     font-family: 'Luckiest Guy';
     letter-spacing: 2px;
+}
+
+.chickenbg,
+.ricemealsbg,
+.sidedishesbg,
+.beveragesbg {
+    position: absolute;
 }
 
 .try {
@@ -236,7 +349,7 @@
     border: none;
 }
 
-.product>div>img:hover {
+.product>a>div>img:hover {
     transform: scale(1.4);
 }
 
@@ -267,7 +380,7 @@
 }
 
 footer {
-    height: 15vh;
+    height: 20vh;
     background: var(--purple--);
     margin-top: -2rem;
     padding-top: 2rem;
@@ -284,6 +397,16 @@ footer .text-left .brand {
     font-family: 'Teko';
 }
 
+footer .text-left>div>a {
+    color: white;
+    font-size: 16px;
+}
+
+footer .text-left>div>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
@@ -291,9 +414,15 @@ footer .text-left .brand {
     margin: 0 5rem;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
 .social-icons i {
     font-size: 25px;
     padding: 0 .6rem;
+    cursor: pointer;
 }
 
 .social-icons {
@@ -314,6 +443,10 @@ footer .text-left .brand {
     cursor: pointer;
 }
 
+.phone-no>a {
+    color: var(--purple--);
+}
+
 .chat-now {
     display: flex;
     align-items: center;
@@ -326,7 +459,6 @@ footer .text-left .brand {
 }
 
 .chat-now p {
-    font-weight: 700;
     font-size: 15px;
 }
 
@@ -337,6 +469,7 @@ footer .text-left .brand {
 }
 
 .chat {
+    display: none;
     position: fixed;
     bottom: 60px;
     box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.4);
@@ -370,4 +503,4 @@ footer .text-left .brand {
     cursor: pointer;
 }
 
-.chat-footer {}
+*/
