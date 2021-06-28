@@ -73,7 +73,8 @@
             </div>
             <div class="nav navbar-nav form-inline navbar-right text-center order" style="padding: 10px; margin: 0 10px;">
                 <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Check-out</a></button>
-                <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Login or Signup</a></button>
+                <h1 class="margin"></h1>
+                <button class="btn btn-warning" id="order-btn"><a href="#"id="order"data-toggle="modal" data-target="#login">Login or Signup</a></button>
             </div>
 
 
@@ -94,29 +95,25 @@
 
     <section id="home">
         <div class="chicken-container">
-            <div class="chilis">
 
-                <div class="chili" id="chili1">
-                    <img src="./images/chili.png" alt="">
-                </div>
-            </div>
             <div class="chicken">
-                <div class="description">
-                    <p class="try">TRY THE ALL NEW</p>
-                    <h1>
-                        <span class="red">FIERY HOT</span> <br> ROYAL <br> CHICKEN</h1>
-                    <div class="price-container">
-                        <div class="price-desc">
-                            price starts at
+                <div class="description-container">
+                    <div class="description">
+                        <p class="try">TRY THE ALL NEW</p>
+                        <h1>
+                            <span class="red">FIERY HOT</span> <br> ROYAL <br> CHICKEN</h1>
+                        <div class="price-container">
+                            <div class="price-desc">
+                                price starts at
+                            </div>
+                            <p class="price">P179</p>
                         </div>
-                        <p class="price">P179</p>
-                    </div>
 
+                    </div>
                 </div>
 
-                <img src="./images/chicken.png" alt="">
-                <div class="coke">
-                    <img src="./images/coke.png" alt="">
+                <div class="img-bg">
+                    <img src="./images/bg.png" alt="">
                 </div>
             </div>
 
@@ -124,8 +121,44 @@
         </div>
 
     </section>
-    <img src="./images/shredded.svg" alt="" class="svg-top">
+
     <section id="products">
+        <div class="modal fade" id="login">
+            <div class="modal-dialog login ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+                        <p> <span class="fas fa-crown"></span> King's Chicken</a>
+                        </p>
+                    </div>
+                    <div class="modal-body ">
+                        <form id="contact_form">
+
+                            <div class="form-group " id="fnamegroup">
+                                <label for="name">Email Address</label>
+                                <input id="fname" type="email" name="fullname" class="form-control">
+                                <span class="glyphicon  form-control-feedback" id="fnamespan"></span>
+                            </div>
+                            <div class="form-group" id="emailgroup">
+                                <label for="name">Password</label>
+                                <input type="password" class="form-control" name="email">
+                                <span id="emailspan" class="glyphicon  form-control-feedback"></span>
+                            </div>
+
+                            <div class="form-group"> <button class="btn btn-danger btn-block send" type="button" onclick="return validateForm()" data-dismiss="modal" required>Login</button></div>
+
+                            <div class="form-group">
+                                <p class="signup">New user? <span> Signup here.</span></p>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="./images/shredded.svg" alt="" class="svg-top">
+
         <img class="chickenbg" src="./images/chickenbg.svg" alt="">
         <div class="container-fluid">
             <h1></h1>
@@ -133,10 +166,10 @@
 
         <div class="container">
 
-            <div class="row">
 
-            </div>
-            <div class="row">
+            <h1 class="text-center page-title home">KING'S ALL-TIME FAVORITES <i class="fas fa-concierge-bell"></i></h1>
+            <div class="roww">
+
 
                 <div class="col-md-4">
 
@@ -279,9 +312,6 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="row row1">
 
                 <div class="col-md-4">
 
@@ -424,9 +454,7 @@
                     </div>
                 </div>
 
-            </div>
 
-            <div class="row row1">
 
                 <div class="col-md-4">
 
@@ -567,30 +595,37 @@
 
             </div>
         </div>
-
+        <h1></h1>
+        <img src="./images/shredded.svg" alt="" class="svg-bottom">
     </section>
-    <img src="./images/shredded.svg" alt="" class="svg-bottom">
+
+
     <footer>
         <div class="footer-container">
             <div class="text-left">
-                <p>2021 &copy; <span class="fas fa-crown"></span><span class="brand"> King's Chicken</span>
+                <p class="copyright">2021 &copy; <span class="fas fa-crown"></span><span class="brand"> King's Chicken</span>
                 </p>
+                <div class="footer-links">
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="about.html">About Us</a>
+                </div>
+
             </div>
             <div class="text-right">
-                <p class="text-left">REACH US THROUGH</p>
+                <p class="text-center">REACH US THROUGH</p>
                 <div class="social-icons">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-twitter"></i>
                     <span class="phone-no">
                         <i class="fas fa-phone-alt"></i>
-                        777-6666
+                       <a href="tel:7776666"data-toggle="tooltip" data-placement="top" title="Call King's Chicken Landline">777-6666</a> 
                     </span>
-                    <!-- <div class="chat-now dropdown">
+                    <div class="chat-now dropdown">
                         <i class="fas fa-comment-dots" onclick="openChat()" id="openmychat"></i>
                         <p>Chat us now!</p>
 
-                    </div> -->
+                    </div>
 
                 </div>
             </div>
@@ -599,7 +634,7 @@
 
         </div>
 
-        <!-- <div class="chat panel panel-default" id="mychat">
+        <div class="chat panel panel-default" id="mychat">
 
             <div class="chat-header panel-heading">
                 <p class="name">
@@ -621,10 +656,15 @@
 
 
         </div>
- -->
+
 
     </footer>
-
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle = "tooltip"]').tooltip();
+            $('[data-toggle = "popover"]').popover();
+        })
+    </script>
 
 </body>
 

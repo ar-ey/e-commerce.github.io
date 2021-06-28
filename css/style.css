@@ -1,506 +1,679 @@
-* {
-    font-family: 'Lato';
-}
-
-:root {
-    --red--: #ff0202;
-    --yellow--: #ffa602;
-    --lightyellow--: #f7dfb2;
-    --purple--: #4600ae;
-}
-
-.nav {
-    transition: all .5s;
-}
-
-.navbar-inverse {
-    background-color: var(--purple--);
-    border: none;
-    margin: 0;
-    border-radius: 0;
-}
-
-.navbar-fixed-top {
-    top: -40px;
-    transform: translateY(40px);
-    transition: transform 0.4s;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-    font-size: 16px;
-}
-
-.navbar-inverse .navbar-brand {
-    font-family: 'Teko';
-    font-size: 35px;
-    text-transform: uppercase;
-    color: white;
-    margin-top: -8px;
-}
-
-.active-link {
-    border-bottom: 1px solid white;
-    margin-bottom: 1rem;
-}
-
-.fa-crown {
-    color: var(--yellow--);
-}
-
-#order {
-    color: var(--purple--);
-    font-weight: 700;
-    padding: 0 3rem;
-}
-
-#order-btn {
-    border-radius: 30px;
-    margin: 0 1rem;
-}
-
-#home {
-    height: 100vh;
-    background-color: var(--purple--);
-}
-
-.chicken-home {
-    margin: -2rem 0;
-    width: 100%;
-    /* padding: 2rem 0; */
-    height: 100px;
-    overflow: hidden;
-    background-color: var(--purple--);
-}
-
-.page-title {
-    color: var(--yellow--);
-    font-family: 'Luckiest Guy';
-    font-size: 55px;
-    animation: titleAnimate 1.2s linear infinite;
-    z-index: 3;
-}
-
-@keyframes titleAnimate {
-    0% {
-        transform: scale(1.1);
+    * {
+        font-family: 'Lato';
     }
-    15% {
-        transform: scale(1.1);
+    
+     :root {
+        --red--: #ff0202;
+        --yellow--: #ffa602;
+        --lightyellow--: #f7dfb2;
+        --purple--: #4600ae;
     }
-    30% {
-        transform: rotate(-2deg);
+    
+    .nav {
+        transition: all .5s;
     }
-    45% {
-        transform: rotate(2deg);
+    
+    .navbar-inverse {
+        background-color: var(--purple--);
+        border: none;
+        margin: 0;
+        border-radius: 0;
     }
-    60% {
-        transform: rotate(-2deg);
+    
+    .navbar-fixed-top {
+        top: -40px;
+        transform: translateY(40px);
+        transition: transform 0.4s;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
     }
-    75% {
-        transform: rotate(0deg);
+    
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+        font-size: 16px;
     }
-    100% {
-        transform: scale(1deg);
+    
+    .navbar-inverse .navbar-brand {
+        font-family: 'Teko';
+        font-size: 35px;
+        text-transform: uppercase;
+        color: white;
+        margin-top: -8px;
     }
-}
-
-.svg-top {
-    transform: rotate(180deg);
-}
-
-.svg-bottom {
-    margin-top: -3rem;
-}
-
-.product-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: none;
-    margin: 1rem;
-    background: white;
-    outline: none;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
-}
-
-.product-info:hover {
-    background-color: #d1d1d1;
-}
-
-.modal-header {
-    border: none;
-    min-height: 0;
-    height: 100%;
-}
-
-.modal-header p {
-    font-family: 'Acme';
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.modal-body .product-info:hover {
-    background: rgb(216, 216, 216);
-}
-
-#products {
-    margin-top: -3rem;
-    padding-bottom: 3rem;
-    /* height: 100vh; */
-    background-color: var(--lightyellow--);
-}
-
-#products .col-md-4 a {
-    color: black;
-    text-decoration: none;
-}
-
-.product {
-    position: relative;
-}
-
-.chilis {
-    position: relative;
-}
-
-.chili {
-    position: absolute;
-}
-
-.chili img {
-    width: 70px;
-}
-
-#chili1 {
-    top: 30px;
-    right: 50%;
-    transform: rotate(20deg);
-    width: 65px;
-}
-
-.tag::before {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: "";
-    background: var(--red--);
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    top: 10px;
-    color: white;
-    font-family: 'Lato';
-    font-weight: bold;
-    left: 10px;
-    z-index: 2;
-    position: absolute;
-}
-
-.tag.new::before {
-    content: "New!";
-}
-
-.chicken-container {
-    padding-top: 50px;
-}
-
-.chicken .chickenimg {
-    transition: all .4s;
-    width: 50%;
-    animation: zoom linear .8s infinite;
-}
-
-.coke img {
-    position: absolute;
-    bottom: 10%;
-    right: 8%;
-    width: 14%;
-}
-
-.chicken img:hover {
-    transform: rotate(10deg);
-}
-
-.chicken {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.chicken h1 {
-    color: white;
-    font-size: 7em;
-    font-family: 'Luckiest Guy';
-    letter-spacing: 2px;
-}
-
-.chickenbg,
-.ricemealsbg,
-.sidedishesbg,
-.beveragesbg {
-    position: absolute;
-}
-
-.try {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.price-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.price-container .price {
-    background-color: var(--red--);
-    color: white;
-    border-radius: 20px;
-    padding: 1rem;
-    font-size: 70px;
-    font-family: 'Luckiest Guy';
-    letter-spacing: 2px;
-    margin: 0 10px;
-}
-
-.price-desc {
-    color: white;
-    font-size: 22px;
-    font-weight: 400;
-}
-
-.red {
-    font-family: 'Luckiest Guy';
-    color: var(--red--);
-    animation: animateText linear 2s infinite;
-    position: absolute;
-}
-
-@keyframes animateText {
-    0% {
-        transform: rotate(-7deg);
+    
+    @media (max-width:400px) {
+        .navbar-inverse .navbar-brand {
+            font-size: 8vw;
+        }
     }
-    50% {
-        transform: rotate(7deg);
+    
+    .active-link {
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
     }
-    100% {
-        transform: rotate(-7deg);
+    
+    .fa-crown {
+        color: var(--yellow--);
     }
-}
-
-@keyframes zoom {
-    0% {
-        transform: scale(1.1);
+    
+    #order {
+        color: var(--purple--);
+        font-weight: 700;
+        padding: 0 3rem;
     }
-    50% {
-        transform: scale(1);
+    
+    #order-btn {
+        border-radius: 30px;
+        margin: 0 1rem;
     }
-    100% {
-        transform: scale(1);
+    
+    #home {
+        height: 100%;
+        background-color: var(--purple--);
     }
-}
-
-#products {}
-
-#products h1 {
-    font-family: 'Luckiest Guy';
-    letter-spacing: 1px;
-    padding: 1rem;
-    font-size: 45px;
-    color: var(--purple--);
-}
-
-.row {}
-
-.product {
-    position: relative;
-    width: 340px;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
-}
-
-.product.new {
-    box-shadow: 0 0 5px 2px var(--red--);
-}
-
-.panel-body {
-    margin-bottom: 1rem;
-}
-
-.panel-body>img {
-    transition: all .3s;
-    border: none;
-    padding: 1rem;
-    background: none;
-    height: 200px;
-    transform: scale(1.34);
-}
-
-.panel {
-    border-radius: 15px;
-    overflow: hidden;
-    border: none;
-}
-
-.product>a>div>img:hover {
-    transform: scale(1.4);
-}
-
-.panel-footer {
-    border-radius: 15px;
-    display: flex;
-    padding: 1rem;
-    justify-content: space-between;
-    font-size: 22px;
-    background: none;
-    border: none;
-    text-transform: capitalize;
-}
-
-.panel-footer p {
-    font-family: 'Acme';
-    font-weight: bold;
-}
-
-.panel-footer-container>p {
-    margin-top: -2rem;
-    font-size: 13px;
-    padding: 1rem;
-}
-
-.row1 {
-    margin-top: 2rem;
-}
-
-footer {
-    height: 20vh;
-    background: var(--purple--);
-    margin-top: -2rem;
-    padding-top: 2rem;
-    color: white;
-}
-
-footer .text-left p {
-    text-transform: uppercase;
-    font-size: 28px;
-    font-family: 'Lato';
-}
-
-footer .text-left .brand {
-    font-family: 'Teko';
-}
-
-footer .text-left>div>a {
-    color: white;
-    font-size: 16px;
-}
-
-footer .text-left>div>a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 5rem;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-icons i {
-    font-size: 25px;
-    padding: 0 .6rem;
-    cursor: pointer;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.phone-no {
-    display: flex;
-    margin: 0 2rem;
-    align-items: center;
-    font-size: 20px;
-    background: var(--yellow--);
-    padding: .7rem 1rem;
-    border-radius: 15px;
-    font-weight: bold;
-    color: var(--purple--);
-    cursor: pointer;
-}
-
-.phone-no>a {
-    color: var(--purple--);
-}
-
-.chat-now {
-    display: flex;
-    align-items: center;
-}
-
-.chat-now i {
-    font-size: 40px;
-    /* color: var(--yellow--); */
-    cursor: pointer;
-}
-
-.chat-now p {
-    font-size: 15px;
-}
-
-.dropdown-menu {
-    top: 4rem;
-    bottom: 6rem;
-    right: 1rem;
-}
-
-.chat {
-    display: none;
-    position: fixed;
-    bottom: 60px;
-    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    right: 1rem;
-    background-color: white;
-    color: black;
-}
-
-.chat-header,
-.chat-footer {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    /* padding: 1rem 1.5rem 0 1.5rem; */
-    font-size: 20px;
-    /* border-bottom: 1px solid rgb(162, 162, 162); */
-}
-
-.chat-body {
-    width: 300px;
-    height: 300px;
-}
-
-.chat-header .name,
-.chat-footer .name {
-    font-weight: bold;
-}
-
-.closechat i {
-    cursor: pointer;
-}
-
-*/
+    
+    .chicken-home {
+        /* margin-top: -2rem; */
+        width: 100%;
+        /* padding: 1rem 0; */
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--purple--);
+    }
+    
+    .chicken-home-container {
+        position: relative;
+    }
+    
+    .page-title {
+        color: var(--yellow--);
+        font-family: 'Luckiest Guy';
+        font-size: 50px;
+        animation: titleAnimate 1.2s linear infinite;
+        z-index: 3;
+    }
+    
+    .page-title.home {}
+    
+    @media (max-width:540px) {
+        .page-title {
+            font-size: 8vw;
+        }
+    }
+    
+    .no-animation {
+        animation: none;
+    }
+    
+    p.aboutus {
+        font-size: 20px;
+    }
+    
+    @keyframes titleAnimate {
+        0% {
+            transform: scale(1.1);
+        }
+        15% {
+            transform: scale(1.1);
+        }
+        30% {
+            transform: rotate(-2deg);
+        }
+        45% {
+            transform: rotate(2deg);
+        }
+        60% {
+            transform: rotate(-2deg);
+        }
+        75% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: scale(1deg);
+        }
+    }
+    
+    #contact_form {
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    
+    #contact_form>div {
+        margin: 1rem auto;
+        width: 80%;
+    }
+    
+    .modal-dialog.login {
+        width: 30%;
+    }
+    
+    .signup span {
+        text-decoration: underline;
+        color: var(--purple--);
+    }
+    
+    .signup span:hover {
+        cursor: pointer;
+    }
+    
+    .svg-top {
+        transform: rotate(180deg);
+        position: absolute;
+        top: -3px;
+    }
+    
+    .svg-bottom {
+        margin-top: -3rem;
+        position: absolute;
+        bottom: -3px;
+    }
+    
+    .product-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        margin: 1rem;
+        background: white;
+        outline: none;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+    }
+    
+    .product-info:hover {
+        background-color: #d1d1d1;
+    }
+    
+    .modal-header {
+        border: none;
+        min-height: 0;
+        height: 100%;
+    }
+    
+    .modal-header p {
+        font-family: 'Acme';
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .modal-body .product-info:hover {
+        background: rgb(216, 216, 216);
+    }
+    
+    #products {
+        /* margin-top: -3rem; */
+        /* padding-bottom: 3rem; */
+        height: 100%;
+        background-color: var(--lightyellow--);
+        position: relative;
+    }
+    
+    #products .col-md-4 a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .col-md-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product {
+        position: relative;
+    }
+    
+    .chilis {
+        position: relative;
+    }
+    
+    .chili {
+        position: absolute;
+    }
+    
+    .chili img {
+        width: 70px;
+    }
+    
+    #chili1 {
+        top: 30px;
+        right: 50%;
+        transform: rotate(20deg);
+        width: 65px;
+    }
+    
+    .tag::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        background: var(--red--);
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        top: 10px;
+        color: white;
+        font-family: 'Lato';
+        font-weight: bold;
+        left: 10px;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    .tag.new::before {
+        content: "New!";
+    }
+    
+    .chicken-container {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .chicken img {
+        transition: all .4s;
+        width: 10px;
+        animation: zoom linear .6s infinite;
+    }
+    
+    .chicken .img-bg img {
+        width: 60vw;
+    }
+    
+    .coke img {
+        position: absolute;
+        bottom: 10%;
+        right: 8%;
+        width: 14%;
+    }
+    
+    .chicken img:hover {
+        /* transform: rotate(10deg); */
+    }
+    
+    .chicken {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+    .chicken h1 {
+        color: white;
+        font-size: 7vw;
+        font-family: 'Luckiest Guy';
+        letter-spacing: 2px;
+    }
+    
+    .chickenbg,
+    .ricemealsbg,
+    .sidedishesbg,
+    .beveragesbg {
+        position: absolute;
+        /* z-index: 0; */
+        height: 100%;
+        width: 100%;
+    }
+    
+    .try {
+        color: white;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .price-container .price {
+        background-color: var(--red--);
+        color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        font-size: 3.5vw;
+        font-family: 'Luckiest Guy';
+        letter-spacing: 2px;
+        margin: 0 10px;
+    }
+    
+    .price-desc {
+        color: white;
+        font-size: 2vw;
+        font-weight: 400;
+    }
+    
+    @media (max-width:860px) {
+        .chicken {
+            display: block;
+        }
+        .price-container {
+            justify-content: start;
+        }
+    }
+    
+    .red {
+        font-family: 'Luckiest Guy';
+        color: var(--red--);
+        animation: animateText linear 2s infinite;
+        position: absolute;
+    }
+    
+    @keyframes animateText {
+        0% {
+            transform: rotate(-7deg);
+        }
+        50% {
+            transform: rotate(7deg);
+        }
+        100% {
+            transform: rotate(-7deg);
+        }
+    }
+    
+    @keyframes zoom {
+        0% {
+            transform: scale(1.1);
+        }
+        50% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @media (max-width: 1230px) {
+        .col-md-4 {
+            width: 50%;
+        }
+    }
+    
+    @media (max-width: 590px) {
+        .col-md-4 {
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 1230px) {
+        .navbar-toggle {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 1230px) {
+        .navbar-nav .open .dropdown-menu {
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: transparent;
+            border: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .navbar-nav .open .dropdown-menu .dropdown-header,
+        .navbar-nav .open .dropdown-menu>li>a {
+            padding: 5px 15px 5px 25px;
+        }
+        .navbar-nav .open .dropdown-menu>li>a {
+            line-height: 20px;
+        }
+        .navbar-nav .open .dropdown-menu>li>a:focus,
+        .navbar-nav .open .dropdown-menu>li>a:hover {
+            background-image: none;
+        }
+    }
+    
+    #products {}
+    
+    #products h1 {
+        font-family: 'Luckiest Guy';
+        letter-spacing: 1px;
+        padding: 1rem;
+        font-size: 45px;
+        color: var(--purple--);
+    }
+    
+    #products h2 {
+        letter-spacing: 1px;
+        font-family: 'Luckiest Guy';
+        color: var(--purple--);
+    }
+    
+    .roww {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product {
+        position: relative;
+        width: 340px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    }
+    
+    .product.new {
+        box-shadow: 0 0 5px 2px var(--red--);
+    }
+    
+    .panel-body {
+        margin-bottom: 1rem;
+    }
+    
+    .panel-body>img {
+        transition: all .3s;
+        border: none;
+        padding: 1rem;
+        background: none;
+        height: 200px;
+        transform: scale(1.34);
+    }
+    
+    .panel {
+        border-radius: 15px;
+        overflow: hidden;
+        border: none;
+    }
+    
+    .product>a>div>img:hover {
+        transform: scale(1.4);
+    }
+    
+    .panel-footer {
+        border-radius: 15px;
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        font-size: 22px;
+        background: none;
+        border: none;
+        text-transform: capitalize;
+    }
+    
+    .btn {
+        outline: none;
+    }
+    
+    .modal-body.bev,
+    .panel-body.bev {
+        display: flex;
+        justify-content: center
+    }
+    
+    .panel-footer p {
+        font-family: 'Acme';
+        font-weight: bold;
+    }
+    
+    .panel-footer-container>p {
+        margin-top: -2rem;
+        font-size: 13px;
+        padding: 1rem;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .footer-container>div {
+        justify-content: center;
+        margin: 1rem auto;
+    }
+    
+    .row1 {
+        margin-top: 2rem;
+    }
+    
+    footer {
+        height: 100%;
+        background: var(--purple--);
+        margin-top: -2rem;
+        padding: 2rem 0;
+        color: white;
+    }
+    
+    footer .text-left p {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-family: 'Lato';
+    }
+    
+    footer .text-left .brand {
+        font-family: 'Teko';
+    }
+    
+    footer .text-left>div>a {
+        color: white;
+        font-size: 16px;
+    }
+    
+    footer .text-left>div>a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    @media (max-width:420px) {
+        .text-left .copyright {
+            font-size: 6vw;
+        }
+    }
+    
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .social-icons i {
+        font-size: 25px;
+        padding: 0 .6rem;
+        cursor: pointer;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .social-icons>span {
+        margin: .9rem 0;
+    }
+    
+    .phone-no {
+        display: flex;
+        margin: 0 2rem;
+        align-items: center;
+        font-size: 20px;
+        background: var(--yellow--);
+        padding: .7rem 1rem;
+        border-radius: 15px;
+        font-weight: bold;
+        color: var(--purple--);
+        cursor: pointer;
+    }
+    
+    .phone-no>a {
+        color: var(--purple--);
+    }
+    
+    .chat-now {
+        display: flex;
+        align-items: center;
+    }
+    
+    .chat-now i {
+        font-size: 40px;
+        /* color: var(--yellow--); */
+        cursor: pointer;
+    }
+    
+    .chat-now p {
+        font-size: 15px;
+    }
+    
+    .dropdown-menu {
+        top: 4rem;
+        bottom: 6rem;
+        right: 1rem;
+    }
+    
+    .chat {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        right: 1rem;
+        background-color: white;
+        color: black;
+    }
+    
+    .chat-header,
+    .chat-footer {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        /* padding: 1rem 1.5rem 0 1.5rem; */
+        font-size: 20px;
+        /* border-bottom: 1px solid rgb(162, 162, 162); */
+    }
+    
+    .chat-body {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .chat-header .name,
+    .chat-footer .name {
+        font-weight: bold;
+    }
+    
+    .closechat i {
+        cursor: pointer;
+    }
+    
+    .margin {
+        display: none;
+    }
+    
+    @media (max-width:445px) {
+        .margin {
+            display: block;
+        }
+    }

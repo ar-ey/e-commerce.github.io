@@ -5088,7 +5088,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar-header {
         float: left;
     }
@@ -5108,7 +5108,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -5216,7 +5216,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
         margin-left: -15px;
@@ -5251,11 +5251,12 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: 4px;
 }
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
     .navbar-toggle {
         display: none;
     }
-}
+} */
 
 .navbar-nav {
     margin: 7.5px -15px;
@@ -5267,7 +5268,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
     line-height: 20px;
 }
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -5289,9 +5291,9 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .navbar-nav .open .dropdown-menu>li>a:hover {
         background-image: none;
     }
-}
+} */
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar-nav {
         float: left;
         margin: 0;
@@ -5424,7 +5426,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-bottom: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar-text {
         float: left;
         margin-right: 15px;
@@ -5432,7 +5434,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1230px) {
     .navbar-left {
         float: left !important;
     }
@@ -5513,7 +5515,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     background-color: #e7e7e7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1230px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #777;
     }
@@ -5628,7 +5630,7 @@ a .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: #080808;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1230px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
         border-color: #080808;
     }
@@ -7134,8 +7136,7 @@ button.close {
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5)
 }
 
-
-/* .modal-backdrop {
+.modal-backdrop {
     position: fixed;
     top: 0;
     right: 0;
@@ -7143,7 +7144,7 @@ button.close {
     left: 0;
     z-index: 1040;
     background-color: #ffffff;
-} */
+}
 
 .modal-backdrop.fade {
     filter: alpha(opacity=0);

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=A&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/8ef97435b0.js' crossorigin='anonymous'></script>
+    <title>Arey</title>
+
+</head>
+
+<body>
+
+    <!-- messenger -->
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109712624697035");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--  -->
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a href="./bootstrap-part-10" class="navbar-brand ">
+                        <span class="fas fa-crown"></span> King's Chicken</a>
+                </div>
+            </div>
+            <div class="nav navbar-nav form-inline navbar-right text-center order" style="padding: 10px; margin: 0 10px;">
+                <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Check-out</a></button>
+                <h1 class="margin"></h1>
+                <button class="btn btn-warning" id="order-btn" data-toggle="modal" data-target="#login"><a href="#"id="order">Login or Signup</a></button>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="chicken-meals.html">Chicken Meals</a></li>
+                    <li><a href="rice-meals.html">Rice Meals</a></li>
+                    <li><a href="side-dish.html">Side Dishes</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="chicken-home">
+
+        <h1 class="text-center page-title no-animation">About us </i>
+        </h1>
+    </section>
+
+
+
+    <section id="products"><img src="./images/shredded.svg" alt="" class="svg-top">
+        <div class="modal fade" id="login">
+            <div class="modal-dialog login ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+                        <p> <span class="fas fa-crown"></span> King's Chicken</a>
+                        </p>
+                    </div>
+                    <div class="modal-body ">
+                        <form id="contact_form">
+
+                            <div class="form-group " id="fnamegroup">
+                                <label for="name">Email Address</label>
+                                <input id="fname" type="email" name="fullname" class="form-control">
+                                <span class="glyphicon  form-control-feedback" id="fnamespan"></span>
+                            </div>
+                            <div class="form-group" id="emailgroup">
+                                <label for="name">Password</label>
+                                <input type="password" class="form-control" name="email">
+                                <span id="emailspan" class="glyphicon  form-control-feedback"></span>
+                            </div>
+
+                            <div class="form-group"> <button class="btn btn-danger btn-block send" type="button" onclick="return validateForm()" data-dismiss="modal" required>Login</button></div>
+
+                            <div class="form-group">
+                                <p class="signup">New user? <span> Signup here.</span></p>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <h1></h1>
+        </div>
+
+        <div class="container">
+
+            <p class="aboutus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque porro, eaque numquam corporis consequuntur id quidem, quo, vitae libero aperiam! Incidunt harum blanditiis, soluta esse aspernatur in minus alias error sequi ducimus veniam
+                saepe similique molestias libero impedit! Voluptatibus soluta asperiores quas libero, sequi beatae earum aliquid perferendis nam quaerat dolorem optio nisi facere aliquam adipisci. Voluptate qui ullam corrupti aperiam ipsam molestiae,
+                nobis esse, consectetur culpa neque placeat eveniet, eligendi enim nemo dolorem! Accusantium nostrum itaque dolores minus deserunt laudantium? Exercitationem quaerat accusantium reiciendis odio officiis ratione alias aliquid temporibus,
+                rem fugiat, commodi iusto incidunt veritatis dicta necessitatibus unde ipsum, molestias mollitia nostrum voluptas hic. Vel dicta perspiciatis optio deserunt. Asperiores, repudiandae porro accusantium sequi praesentium tenetur eveniet accusamus
+                numquam! Velit, facere fugiat? Laboriosam minima id totam soluta aut culpa repellendus hic, vitae, fugit ipsa atque velit numquam fuga eligendi voluptate nisi similique! Delectus voluptas eligendi deserunt quia natus aut? Distinctio, consectetur
+                maiores repudiandae nulla ducimus, iusto veniam omnis soluta similique blanditiis nihil nisi nesciunt. Asperiores odit excepturi nam. Voluptatum adipisci doloribus iure! Officia ipsa voluptatibus voluptatum, reprehenderit magni iusto minima
+                ad odit quisquam consequatur, debitis mollitia provident. Expedita doloribus laudantium recusandae libero minima aut officiis ad perspiciatis.
+
+                <br>
+                <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum error voluptatem quos? Quos explicabo quasi quia quis alias nihil eum eligendi officia quisquam, mollitia ex odio commodi itaque suscipit saepe modi deleniti incidunt?
+                Earum, labore ipsam eveniet reiciendis ipsa veniam animi officiis ea tempora numquam iure nesciunt non tenetur laboriosam error? Optio, distinctio illo pariatur autem nulla molestiae repellat neque sunt, blanditiis assumenda maxime numquam
+                expedita consectetur, itaque quas sapiente sit in dolores error minima? Earum aliquid deserunt ad omnis odit accusantium officia quia porro corporis rem? Facere modi, cum alias aperiam rerum quos atque eum deleniti neque tempora! Ipsa
+                in recusandae repellat cupiditate sit, amet ipsum, dolorum aperiam asperiores quis ipsam tempore repudiandae delectus voluptatem, quae unde necessitatibus qui modi! Vero tenetur optio, impedit voluptatibus officia adipisci repellendus
+                ratione nostrum eius sint earum, amet architecto est veritatis. Sequi velit a cumque sapiente, repudiandae enim accusantium itaque veniam molestiae ipsam?
+
+            </p>
+
+
+
+        </div>
+        <h1></h1>
+        <img src="./images/shredded.svg" alt="" class="svg-bottom">
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="text-left">
+                <p class="copyright">2021 &copy; <span class="fas fa-crown"></span><span class="brand"> King's Chicken</span>
+                </p>
+                <div class="footer-links">
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="about.html">About Us</a>
+                </div>
+
+            </div>
+            <div class="text-right">
+                <p class="text-center">REACH US THROUGH</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <span class="phone-no">
+                        <i class="fas fa-phone-alt"></i>
+                       <a href="tel:7776666"data-toggle="tooltip" data-placement="top" title="Call King's Chicken Landline">777-6666</a> 
+                    </span>
+                    <div class="chat-now dropdown">
+                        <i class="fas fa-comment-dots" onclick="openChat()" id="openmychat"></i>
+                        <p>Chat us now!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="chat panel panel-default" id="mychat">
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+            <div class="panel-body chat-body">
+                Hello
+            </div>
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle = "tooltip"]').tooltip();
+            $('[data-toggle = "popover"]').popover();
+        })
+    </script>
+
+
+</body>
+
+</html>
