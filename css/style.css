@@ -68,6 +68,7 @@
     
     #home {
         height: 100%;
+        padding-bottom: 3vw;
         background-color: var(--purple--);
     }
     
