@@ -211,9 +211,11 @@
         height: 100%;
         background-color: var(--lightyellow--);
         position: relative;
+        z-index: 1;
     }
     
-    #products .col-md-4 a {
+    #products .col-md-4 a,
+    #products .order-container a {
         color: black;
         text-decoration: none;
     }
@@ -222,6 +224,163 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    
+    .order-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .order-options {
+        margin: 0 3rem;
+    }
+    
+    p.choose {
+        font-size: 30px;
+        font-family: 'Luckiest Guy';
+        color: var(--purple--);
+    }
+    
+    .flavor-container {
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, .4);
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: var(--yellow--);
+        cursor: pointer;
+        margin: 0 1rem;
+        /* width: 100%; */
+        /* transition: all .3s; */
+    }
+    
+    .drink-container {
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, .4);
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        background: var(--yellow--);
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+    
+    @media (max-width:500px) {
+        .flavor-container,
+        .drink-container {
+            width: 40vw;
+        }
+        .drink-container img,
+        .flavor-container img {
+            width: 35vh;
+        }
+    }
+    
+    .flavors,
+    .drinks {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .quantity {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .quantity i {
+        font-size: 24px;
+    }
+    
+    .quantity i:hover {
+        color: var(--yellow--);
+    }
+    
+    .quantity p {
+        margin: 0 .5rem;
+    }
+    
+    .flavor-container:hover {
+        background: var(--purple--);
+        /* display: none; */
+        color: white;
+    }
+    
+    .drink-container:hover {
+        background: var(--purple--);
+        /* display: none; */
+        color: white;
+    }
+    
+    .flavor-container img {
+        margin: 0 1rem;
+        background: white;
+        max-width: 160px;
+        width: 160px;
+    }
+    
+    .drink-container img {
+        height: 200px;
+        background: white;
+        width: 160px;
+    }
+    
+    @media (max-width:500px) {
+        .flavor-container,
+        .drink-container {
+            width: 40vw;
+        }
+        .drink-container img,
+        .flavor-container img {
+            width: 30vw;
+        }
+        .order1 {
+            width: 80vw;
+        }
+        .order1 .product {
+            width: 80vw;
+        }
+    }
+    
+    .flavor-container p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .drink-container p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .checkout,
+    .basket {
+        background: var(--yellow--);
+        color: black;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .total {
+        background: var(--purple--);
+        border-radius: 15px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .checkout:hover {
+        background: var(--purple--);
+        color: white;
+    }
+    
+    .basket:hover {
+        background: var(--purple--);
+        color: white;
     }
     
     .product {
@@ -317,7 +476,7 @@
     .sidedishesbg,
     .beveragesbg {
         position: absolute;
-        /* z-index: 0; */
+        z-index: -1;
         height: 100%;
         width: 100%;
     }
@@ -459,6 +618,10 @@
         position: relative;
         width: 340px;
         box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    }
+    
+    .product.order {
+        height: 100%;
     }
     
     .product.new {

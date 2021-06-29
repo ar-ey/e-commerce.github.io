@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=A&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/8ef97435b0.js' crossorigin='anonymous'></script>
+    <title>Arey</title>
+
+</head>
+
+<body>
+
+    <!-- messenger -->
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109712624697035");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--  -->
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a href="./index.html" class="navbar-brand ">
+                        <span class="fas fa-crown"></span> King's Chicken</a>
+                </div>
+            </div>
+            <div class="nav navbar-nav form-inline navbar-right text-center order" style="padding: 10px; margin: 0 10px;">
+                <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Check-out</a></button>
+                <h1 class="margin"></h1>
+                <button class="btn btn-warning" id="order-btn" data-toggle="modal" data-target="#login"><a href="#"id="order">Login or Signup</a></button>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active-link"> <a class="activelink" href="chicken-meals.html">Chicken Meals</a></li>
+                    <li><a href="rice-meals.html">Rice Meals</a></li>
+                    <li><a href="side-dish.html">Side Dishes</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="chicken-home">
+
+        <h1 class="text-center page-title">KING'S CHICKEN MEALS <i class="fas fa-drumstick-bite"></i></h1>
+    </section>
+
+
+    <section id="products">
+        <div class="modal fade" id="login">
+            <div class="modal-dialog login ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+                        <p> <span class="fas fa-crown"></span> King's Chicken</a>
+                        </p>
+                    </div>
+                    <div class="modal-body ">
+                        <form id="contact_form">
+
+                            <div class="form-group " id="fnamegroup">
+                                <label for="name">Email Address</label>
+                                <input id="fname" type="email" name="fullname" class="form-control">
+                                <span class="glyphicon  form-control-feedback" id="fnamespan"></span>
+                            </div>
+                            <div class="form-group" id="emailgroup">
+                                <label for="name">Password</label>
+                                <input type="password" class="form-control" name="email">
+                                <span id="emailspan" class="glyphicon  form-control-feedback"></span>
+                            </div>
+
+                            <div class="form-group"> <button class="btn btn-danger btn-block send" type="button" onclick="return validateForm()" data-dismiss="modal" required>Login</button></div>
+
+                            <div class="form-group">
+                                <p class="signup">New user? <span> Signup here.</span></p>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div> <img src="./images/shredded.svg" alt="" class="svg-top">
+
+        <img class="chickenbg" src="./images/chickenbg.svg" alt="">
+        <div class="container-fluid">
+            <h1></h1>
+        </div>
+
+        <div class="container">
+
+
+            <div class="order-container">
+                <div class="order1">
+                    <div class="product panel panel-default new order">
+                        <a href="fiery-hot-chicken.html">
+                            <div class="panel-body tag new">
+                                <img src="images/chicken.png" alt="" class="img-thumbnail">
+
+                            </div>
+                            <div class="panel-footer-container">
+                                <div class="panel-footer">
+
+                                    <p class="title"> Fiery Hot Royal Chicken
+                                    </p>
+
+                                </div>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, corrupti.</p>
+                            </div>
+                        </a>
+
+                        <button class="product-info" data-toggle="modal" data-target="#meal1"><i class="fas fa-info"></i></button>
+
+                    </div>
+                    <p class="total text-center"> <span>P </span>
+                        <span id="total">0</span><span>.00</span></p>
+                    <button class="basket btn btn-block">ADD TO BASKET <i class="fas fa-shopping-basket"></i></button>
+
+                </div>
+
+                <div class="order-options">
+                    <p class="choose text-center">CHOOSE A FLAVOR</p>
+                    <div class="flavors">
+                        <div class="flavor-container">
+                            <img src="./images/chicken.png" alt="">
+                            <div>
+                                <p>Spicy Hot</p>
+                                <div class="quantity">
+                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity()"> </i>
+
+                                    <p id="quantityValue">0</p>
+                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity()"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flavor-container">
+                            <img src="./images/chicken.png" alt="">
+                            <div>
+                                <p>Fiery Hot</p>
+                                <div class="quantity">
+                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity1()"> </i>
+
+                                    <p id="quantityValue1">0</p>
+                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity1()"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="choose text-center">CHOOSE YOUR DRINKS</p>
+                    <div class=" drinks">
+                        <div class="drink-container">
+                            <img src="./images/bev4.png" alt="">
+                            <div>
+                                <p class="text-center">Coca Cola</p>
+
+                            </div>
+                        </div>
+                        <div class="drink-container">
+                            <img src="./images/bev5.png" alt="">
+                            <div>
+                                <p class="text-center">Sprite</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <h1></h1>
+        <img src="./images/shredded.svg" alt="" class="svg-bottom">
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="text-left">
+                <p class="copyright">2021 &copy; <span class="fas fa-crown"></span><span class="brand"> King's Chicken</span>
+                </p>
+                <div class="footer-links">
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="about.html">About Us</a>
+                </div>
+
+            </div>
+            <div class="text-right">
+                <p class="text-center">REACH US THROUGH</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <span class="phone-no">
+                        <i class="fas fa-phone-alt"></i>
+                       <a href="tel:7776666"data-toggle="tooltip" data-placement="top" title="Call King's Chicken Landline">777-6666</a> 
+                    </span>
+                    <div class="chat-now dropdown">
+                        <i class="fas fa-comment-dots" onclick="openChat()" id="openmychat"></i>
+                        <p>Chat us now!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="chat panel panel-default" id="mychat">
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+            <div class="panel-body chat-body">
+                Hello
+            </div>
+
+            <div class="chat-header panel-heading">
+                <p class="name">
+                    <i class="fas fa-user-ninja"></i> Ninja
+                </p>
+                <p class="closechat" id="closemychat"><i class="fas fa-times-circle" onclick="closeChat()"></i></p>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle = "tooltip"]').tooltip();
+            $('[data-toggle = "popover"]').popover();
+        })
+    </script>
+
+
+</body>
+
+</html>

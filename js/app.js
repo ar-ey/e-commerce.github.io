@@ -61,3 +61,55 @@ function validateForm() {
 
     }
 }
+var count = 0;
+var count1 = 0;
+var total = 0;
+
+function minusQuantity() {
+
+    let value = document.getElementById('quantityValue')
+    let totalValue = document.getElementById('total')
+    if (count > 0)
+        count--;
+    total = 159 * (count + count1)
+    value.innerHTML = count;
+    totalValue.innerHTML = total
+
+}
+function addQuantity() {
+    let value = document.getElementById('quantityValue')
+    let totalValue = document.getElementById('total')
+    count++;
+    total = 159 * (count + count1)
+    value.innerHTML = count;
+    totalValue.innerHTML = total
+
+}
+
+function minusQuantity1() {
+
+    let value = document.getElementById('quantityValue1')
+    let totalValue = document.getElementById('total')
+    if (count1 > 0)
+        count1--;
+    total = 159 * (count + count1)
+    value.innerHTML = count1;
+    totalValue.innerHTML = total
+
+
+}
+function addQuantity1() {
+    let value = document.getElementById('quantityValue1')
+    let totalValue = document.getElementById('total')
+    count1++;
+    total = 159 * (count + count1)
+    value.innerHTML = count1;
+    totalValue.innerHTML = total
+
+}
+
+
+
+
+
+
