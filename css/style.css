@@ -211,7 +211,6 @@
         height: 100%;
         background-color: var(--lightyellow--);
         position: relative;
-        z-index: 1;
     }
     
     #products .col-md-4 a,
@@ -258,6 +257,14 @@
         /* transition: all .3s; */
     }
     
+    .flavor-container.checkouts {
+        margin: 2rem 0;
+    }
+    
+    .prodtotal {
+        margin: 0 2rem;
+    }
+    
     .drink-container {
         box-shadow: 0 0 2px 1px rgba(0, 0, 0, .4);
         border-radius: 15px;
@@ -267,6 +274,34 @@
         background: var(--yellow--);
         cursor: pointer;
         margin: 0 1rem;
+    }
+    
+    .modal-dialog.cart>div {
+        padding: 2rem 0;
+        color: white;
+        background: var(--purple--);
+    }
+    
+    .added {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .modal-dialog.cart>div>div>div>a>button {
+        border-radius: 15px;
+        background: var(--yellow--);
+        color: black;
+        font-weight: bold;
+    }
+    
+    .modal-dialog.cart>div>div>div>a>button:hover {
+        background: #ce8702;
+    }
+    
+    .modal-dialog.cart>div>div {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     @media (max-width:500px) {
@@ -285,6 +320,10 @@
         margin: 1rem 0;
         display: flex;
         justify-content: center;
+    }
+    
+    .flavors.checkouts {
+        display: block;
     }
     
     .quantity {
@@ -322,6 +361,7 @@
         background: white;
         max-width: 160px;
         width: 160px;
+        height: 90px;
     }
     
     .drink-container img {
@@ -662,6 +702,17 @@
         text-transform: capitalize;
     }
     
+    .panel-footer.order {
+        padding: 0;
+        display: block;
+    }
+    
+    .title.order {
+        justify-content: space-between;
+        padding: 0 1rem;
+        display: flex;
+    }
+    
     .btn {
         outline: none;
     }
@@ -843,4 +894,10 @@
         .margin {
             display: block;
         }
+    }
+    
+    .checkoutform.form {
+        width: 50vw;
+        max-width: 500px;
+        margin: 0 auto;
     }

@@ -7121,6 +7121,7 @@ button.close {
     position: relative;
     width: auto;
     margin: 10px;
+    z-index: 1000;
 }
 
 .modal-content {

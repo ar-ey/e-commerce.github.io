@@ -81,7 +81,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li> <a href="chicken-meals.html">Chicken Meals</a></li>
+                    <li class="active-link"> <a class="activelink" href="chicken-meals.html">Chicken Meals</a></li>
                     <li><a href="rice-meals.html">Rice Meals</a></li>
                     <li><a href="side-dish.html">Side Dishes</a></li>
                     <li><a href="beverages.html">Beverages</a></li>
@@ -94,12 +94,11 @@
 
     <section class="chicken-home">
 
-        <h1 class="text-center page-title no-animation">Terms and Conditions</h1>
+        <h1 class="text-center page-title">CHECKOUT</h1>
     </section>
 
 
-
-    <section id="products"><img src="./images/shredded.svg" alt="" class="svg-top">
+    <section id="products">
         <div class="modal fade" id="login">
             <div class="modal-dialog login ">
                 <div class="modal-content">
@@ -133,38 +132,152 @@
 
                 </div>
             </div>
-        </div>
+        </div> <img src="./images/shredded.svg" alt="" class="svg-top">
 
+        <img class="chickenbg" src="./images/chickenbg.svg" alt="">
         <div class="container-fluid">
             <h1></h1>
         </div>
 
         <div class="container">
 
-            <p class="aboutus">
-                <h2>1. Lorem ipsum dolor sit.</h1>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque porro, eaque numquam corporis consequuntur id quidem, quo, vitae libero aperiam! Incidunt harum blanditiis, soluta esse aspernatur in minus alias error sequi ducimus veniam saepe similique
-                    molestias libero impedit! Voluptatibus soluta asperiores quas libero, sequi beatae earum aliquid perferendis nam quaerat dolorem optio nisi facere aliquam adipisci. Voluptate qui ullam corrupti aperiam ipsam molestiae, nobis esse,
-                    consectetur
 
-                    <h2>2. Lorem ipsum dolor sit amet consectetur.</h2>
-                    culpa neque placeat eveniet, eligendi enim nemo dolorem! Accusantium nostrum itaque dolores minus deserunt laudantium? Exercitationem quaerat accusantium reiciendis odio officiis ratione alias aliquid temporibus, rem fugiat, commodi iusto incidunt veritatis
-                    dicta necessitatibus unde ipsum, molestias mollitia nostrum voluptas hic. Vel dicta perspiciatis optio deserunt. Asperiores, repudiandae porro accusantium sequi praesentium tenetur eveniet accusamus numquam! Velit, facere fugiat? Laboriosam
-                    minima id totam soluta aut culpa repellendus hic, vitae, fugit ipsa atque velit numquam fuga eligendi voluptate nisi similique! Delectus voluptas eligendi deserunt quia natus aut? Distinctio, consectetur maiores repudiandae nulla ducimus,
-                    iusto veniam omnis soluta similique blanditiis nihil nisi nesciunt. Asperiores odit excepturi nam. Voluptatum adipisci doloribus iure! Officia ipsa voluptatibus voluptatum, reprehenderit magni iusto minima ad odit quisquam consequatur,
-                    debitis mollitia provident. Expedita doloribus laudantium recusandae libero minima aut officiis ad perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, delectus dolore inventore aliquid nihil accusamus
-                    deserunt cum, et labore pariatur laudantium porro incidunt omnis unde perspiciatis ea, soluta quibusdam voluptas laborum! Maiores recusandae temporibus voluptatibus, inventore eos explicabo ab officiis dolores non sed dignissimos quisquam
-                    repudiandae! Exercitationem facilis enim pariatur.
+            <div class="order-container checkoutorder">
+                <div class="order-options">
+                    <p class="choose text-center">ORDER SUMMARY</p>
+                    <div class="flavors checkouts">
+                        <div class="flavor-container checkouts">
+                            <img src="./images/chicken.png" alt="">
+                            <div>
+                                <p>Spicy Hot</p>
+                                <div class="quantity">
+                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity()"> </i>
 
-                    <h2>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, recusandae!</h2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum error voluptatem quos? Quos explicabo quasi quia quis alias nihil eum eligendi officia
-                    quisquam, mollitia ex odio commodi itaque suscipit saepe modi deleniti incidunt? Earum, labore ipsam eveniet reiciendis ipsa veniam animi officiis ea tempora numquam iure nesciunt non tenetur laboriosam error? Optio, distinctio illo
-                    pariatur autem nulla molestiae repellat neque sunt, blanditiis assumenda maxime numquam expedita consectetur, itaque quas sapiente sit in dolores error minima? Earum aliquid deserunt ad omnis odit accusantium officia quia porro corporis
-                    rem? Facere modi, cum alias aperiam rerum quos atque eum deleniti neque tempora! Ipsa in recusandae repellat cupiditate sit, amet ipsum, dolorum aperiam asperiores quis ipsam tempore repudiandae delectus voluptatem, quae unde necessitatibus
-                    qui modi! Vero tenetur optio, impedit voluptatibus officia adipisci repellendus ratione nostrum eius sint earum, amet architecto est veritatis. Sequi velit a cumque sapiente, repudiandae enim accusantium itaque veniam molestiae ipsam?
+                                    <p id="quantityValue">1</p>
+                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity()"></i>
+                                </div>
+                            </div>
 
-            </p>
+                        </div>
+                        <div class="flavor-container checkouts">
+                            <img src="./images/bev3.jpg" alt="">
+                            <div>
+                                <p>Milo Dinosaur</p>
+                                <div class="quantity">
+                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity1()"> </i>
+
+                                    <p id="quantityValue1">1</p>
+                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity1()"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="order1">
+                    <div class="product panel panel-default order">
+                        <a href="fiery-hot-chicken.html">
+                            <div class="panel-body">
+                                <h2 class="text-center">PAYMENT SUMMARY</h2>
+                            </div>
+                            <div class="panel-footer-container">
+                                <div class="panel-footer order">
+
+                                    <div class="title order">
+                                        <p>SUBTOTAL</p>
+                                        <p>P397.00</p>
+                                    </div>
+                                    <div class="title order">
+                                        <p>DELIVERY</p>
+                                        <p>P45.00</p>
+                                    </div>
+                                    <hr>
+                                    <div class="title order">
+                                        <p>GRAND TOTAL</p>
+                                        <p>P442.00</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </a>
 
 
+
+                    </div>
+                    <div class="modal fade" id="meal1">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+                                    <p>Fiery Hot Royal Chicken</p>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/chicken.png" alt="" class="img-thumbnail">
+                                    <p>
+                                        <ul>
+                                            <li>2 pc Royal Chicken</li>
+                                            <li>Good for 2-3 persons</li>
+                                            <li>Available in Spicy and Fiery Hot</li>
+                                        </ul>
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <p class="total text-center"> <span>P </span>
+                        <span id="total">0</span><span>.00</span></p> -->
+                    <button class="basket btn btn-block" data-toggle="modal" data-target="#pay">PROCEED </button>
+
+                    <div class="modal fade" id="pay">
+                        <div class="modal-dialog cart">
+                            <div class="modal-content">
+
+                                <div class="modal-body checkoutnow">
+                                    <div>
+                                        <p class="added text-center">BILLING DETAILS</p>
+
+                                        <form class="checkoutform form">
+
+
+                                            <div class="form-group">
+                                                <label for="name">Full Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name">Contact Number</label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name">Delivery Address</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message">Message to rider</label>
+
+                                                <textarea rows="5" class="form-control"></textarea>
+
+                                            </div>
+
+                                        </form>
+                                        <a href="chicken-meals.html"><button class="btn btn-block text-center">CONFIRM ORDER</button></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
 
         </div>
         <h1></h1>

@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="nav navbar-nav form-inline navbar-right text-center order" style="padding: 10px; margin: 0 10px;">
-                <button class="btn btn-warning" id="order-btn"><a href="#"id="order">Check-out</a></button>
+                <button class="btn btn-warning" id="order-btn"><a href="./checkout.html"id="order">Check-out</a></button>
                 <h1 class="margin"></h1>
                 <button class="btn btn-warning" id="order-btn" data-toggle="modal" data-target="#login"><a href="#"id="order">Login or Signup</a></button>
             </div>
@@ -163,10 +163,50 @@
 
                         <button class="product-info" data-toggle="modal" data-target="#meal1"><i class="fas fa-info"></i></button>
 
+
+                    </div>
+                    <div class="modal fade" id="meal1">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+                                    <p>Fiery Hot Royal Chicken</p>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/chicken.png" alt="" class="img-thumbnail">
+                                    <p>
+                                        <ul>
+                                            <li>2 pc Royal Chicken</li>
+                                            <li>Good for 2-3 persons</li>
+                                            <li>Available in Spicy and Fiery Hot</li>
+                                        </ul>
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                     <p class="total text-center"> <span>P </span>
                         <span id="total">0</span><span>.00</span></p>
-                    <button class="basket btn btn-block">ADD TO BASKET <i class="fas fa-shopping-basket"></i></button>
+                    <button class="basket btn btn-block" data-toggle="modal" data-target="#addtocart">ADD TO BASKET <i class="fas fa-shopping-basket"></i></button>
+
+                    <div class="modal fade" id="addtocart">
+                        <div class="modal-dialog cart">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <div>
+                                        <p class="added text-center">ADDED SUCCESSFULLY!</p>
+                                        <a href="chicken-meals.html"><button class="btn btn-block text-center">OK</button></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
