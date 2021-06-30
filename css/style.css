@@ -901,3 +901,7 @@
         max-width: 500px;
         margin: 0 auto;
     }
+    
+    .amt {
+        font-family: 'Acme';
+    }

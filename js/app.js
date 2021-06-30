@@ -63,7 +63,11 @@ function validateForm() {
 }
 var count = 0;
 var count1 = 0;
+var count2 = 1;
+var count3 = 1;
 var total = 0;
+var total2 = 79;
+var total3 = 159;
 
 function minusQuantity() {
 
@@ -108,6 +112,59 @@ function addQuantity1() {
 
 }
 
+
+
+function minusQuantity2() {
+
+    let value = document.getElementById('quantityValue2')
+    let totalValue = document.getElementById('total2')
+    if (count2 > 0)
+        count2--;
+    total2 = 79 * count2
+    value.innerHTML = count2;
+    totalValue.innerHTML = total2
+
+
+}
+function addQuantity2() {
+    let value = document.getElementById('quantityValue2')
+    let totalValue = document.getElementById('total2')
+    count2++;
+    total2 = 79 * count2
+    value.innerHTML = count2;
+    totalValue.innerHTML = total2
+
+}
+function minusQuantity3() {
+
+    let value = document.getElementById('quantityValue3')
+    let totalValue = document.getElementById('total3')
+    if (count3 > 0)
+        count3--;
+    total3 = 159 * count3
+    value.innerHTML = count3;
+    totalValue.innerHTML = total3
+
+
+}
+function addQuantity3() {
+    let value = document.getElementById('quantityValue3')
+    let totalValue = document.getElementById('total3')
+    count3++;
+    total3 = 159 * count3
+    value.innerHTML = count3;
+    totalValue.innerHTML = total3
+
+}
+function compute() {
+    let sub = document.getElementById('subtotal');
+    let grand = document.getElementById('grandtotal');
+
+    let subtotal = total2 + total3
+    let grandtotal = total2 + total3 + 45
+    sub.innerHTML = subtotal
+    grand.innerHTML = grandtotal
+}
 
 
 

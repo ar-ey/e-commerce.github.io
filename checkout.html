@@ -81,7 +81,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active-link"> <a class="activelink" href="chicken-meals.html">Chicken Meals</a></li>
+                    <li> <a class="activelink" href="chicken-meals.html">Chicken Meals</a></li>
                     <li><a href="rice-meals.html">Rice Meals</a></li>
                     <li><a href="side-dish.html">Side Dishes</a></li>
                     <li><a href="beverages.html">Beverages</a></li>
@@ -150,11 +150,13 @@
                             <img src="./images/chicken.png" alt="">
                             <div>
                                 <p>Spicy Hot</p>
+                                <p class="total text-center"> <span>P </span>
+                                    <span id="total3">159</span><span>.00</span></p>
                                 <div class="quantity">
-                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity()"> </i>
+                                    <i class="fas fa-minus-square" id="minusQuantity3" onclick="minusQuantity3(); compute();"> </i>
 
-                                    <p id="quantityValue">1</p>
-                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity()"></i>
+                                    <p id="quantityValue3">1</p>
+                                    <i class="fas fa-plus-square" id="addQuantity3" onclick="addQuantity3(); compute();"></i>
                                 </div>
                             </div>
 
@@ -163,11 +165,13 @@
                             <img src="./images/bev3.jpg" alt="">
                             <div>
                                 <p>Milo Dinosaur</p>
+                                <p class="total text-center"> <span>P </span>
+                                    <span id="total2">79</span><span>.00</span></p>
                                 <div class="quantity">
-                                    <i class="fas fa-minus-square" id="minusQuantity" onclick="minusQuantity1()"> </i>
+                                    <i class="fas fa-minus-square" id="minusQuantity2" onclick="minusQuantity2(); compute();"> </i>
 
-                                    <p id="quantityValue1">1</p>
-                                    <i class="fas fa-plus-square" id="addQuantity" onclick="addQuantity1()"></i>
+                                    <p id="quantityValue2">1</p>
+                                    <i class="fas fa-plus-square" id="addQuantity2" onclick="addQuantity2(); compute();"></i>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +190,7 @@
 
                                     <div class="title order">
                                         <p>SUBTOTAL</p>
-                                        <p>P397.00</p>
+                                        <p>P<span class="amt" id="subtotal">238</span>.00</p>
                                     </div>
                                     <div class="title order">
                                         <p>DELIVERY</p>
@@ -195,7 +199,7 @@
                                     <hr>
                                     <div class="title order">
                                         <p>GRAND TOTAL</p>
-                                        <p>P442.00</p>
+                                        <p>P<span class="amt" id="grandtotal">283</span>.00</p>
                                     </div>
 
                                 </div>
