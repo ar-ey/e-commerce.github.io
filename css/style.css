@@ -234,6 +234,7 @@
     
     .order-options {
         margin: 0 3rem;
+        disy
     }
     
     p.choose {
@@ -258,7 +259,7 @@
     }
     
     .flavor-container.checkouts {
-        margin: 2rem 0;
+        margin: 2rem auto;
     }
     
     .prodtotal {
